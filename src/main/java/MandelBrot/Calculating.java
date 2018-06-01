@@ -34,6 +34,8 @@ public class Calculating {
         this.imaginaryTo = requestData.getImaginaryTo();
         this.interval = requestData.getIntervall();
         this.iteration = requestData.getMaxIteration();
+
+        calculationList.clear();
         return this;
     }
 
