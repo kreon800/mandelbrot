@@ -32,7 +32,7 @@ public class Calculating {
         this.realTo = requestData.getRealTo();
         this.imaginaryFrom = requestData.getImaginaryFrom();
         this.imaginaryTo = requestData.getImaginaryTo();
-        this.interval = requestData.getIntervall();
+        this.interval = requestData.getInterval();
         this.iteration = requestData.getMaxIteration();
 
         calculationList.clear();
@@ -78,58 +78,4 @@ public class Calculating {
 
         return (double) iteration;
     }
-
-//    void Calculate(RequestData _requestData)
-//    {
-//
-//        ArrayList<Double> response = new ArrayList<>();
-//
-//        //ToDo: Return values have to be the amount of iterations
-//        do
-//        {
-//            Double convergent = isConvergent(realFrom, imaginaryFrom, iteration);
-//            response.add(convergent);
-//            if (realFrom <= realTo)
-//            {
-//                realFrom = realFrom + interval;
-//            }
-//            if (imaginaryFrom <= imaginaryTo)
-//            {
-//                imaginaryFrom = imaginaryFrom + interval;
-//            }
-//        } while(realFrom <= realTo && imaginaryFrom <= imaginaryTo);
-//
-//        responseData.setResponse(response);
-//    }
-//
-//    private Double isConvergent(Double _realFrom, Double _imaginaryFrom, Integer _iteration)
-//    {
-//        double real = 0.0;
-//        double imaginary = 0.0;
-//        double iterations = 0.0;
-//        while (real * real + imaginary * imaginary <= 2.0 && iterations < _iteration) {
-//            double result = real * real - imaginary * imaginary + _realFrom;
-//            imaginary = 2 * real * imaginary + _imaginaryFrom;
-//            real = result;
-//            iterations++;
-//        }
-//        return iterations;
-//
-////        Integer iterations = 0;
-////        double z = 0, z2, c = 0;
-////
-////        for (int n = 0; n < _iteration; n++)
-////        {
-//////            iterations = n;
-////            if (z * z + c * c > 2)
-////            {
-////                return iterations; //false
-////            }
-////            z2 = z * z - c * c + _realFrom; //_X
-////            c = 2 * z * c + _imaginaryFrom; //_Y
-////            z = z2;
-////            iterations = n;
-////        }
-////        return iterations;//true
-//    }
 }
