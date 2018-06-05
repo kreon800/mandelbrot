@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "0.0.0.0", maxAge = 3600)
 @RestController
 public class Controller {
     @Autowired
@@ -18,7 +19,5 @@ public class Controller {
                           .resolve()
                           .calc()
                           .response();
-//        calculating.Calculate(requestData);
-//        return calculating.getResponseData();
     }
 }
