@@ -15,7 +15,7 @@ public class CalculatingTest {
         data.setRealTo(1.0D);
         data.setImaginaryFrom(-1.0D);
         data.setImaginaryTo(1.0D);
-        data.setInterval(0.01D);
+        data.setIntervall(0.01D);
         data.setMaxIteration(100);
 
         new Calculating().request(data).resolve().calc().response();

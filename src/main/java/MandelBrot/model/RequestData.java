@@ -3,64 +3,64 @@ package MandelBrot.model;
 
 public class RequestData
 {
-    private Double realFrom;
-    private Double realTo;
-    private Double imaginaryFrom;
-    private Double imaginaryTo;
-    private Double interval;
-    private Integer maxIteration;
+    private Double RealFrom;
+    private Double RealTo;
+    private Double ImaginaryFrom;
+    private Double ImaginaryTo;
+    private Double Intervall;
+    private Integer MaxIteration;
 
     public void setRealFrom(Double realFrom)
     {
-        this.realFrom = realFrom;
+        this.RealFrom = realFrom;
     }
 
     public Double getRealFrom() {
-        return realFrom;
+        return RealFrom;
     }
 
     public void setRealTo(Double realTo)
     {
-        this.realTo = realTo;
+        this.RealTo = realTo;
     }
 
     public Double getRealTo() {
-        return realTo;
+        return RealTo;
     }
 
     public void setImaginaryFrom(Double imaginaryFrom)
     {
-        this.imaginaryFrom = imaginaryFrom;
+        this.ImaginaryFrom = imaginaryFrom;
     }
 
     public Double getImaginaryFrom() {
-        return imaginaryFrom;
+        return ImaginaryFrom;
     }
 
     public void setImaginaryTo(Double imaginaryTo)
     {
-        this.imaginaryTo = imaginaryTo;
+        this.ImaginaryTo = imaginaryTo;
     }
 
     public Double getImaginaryTo() {
-        return imaginaryTo;
+        return ImaginaryTo;
     }
 
-    public void setInterval(Double interval)
+    public void setIntervall(Double intervall)
     {
-        this.interval = interval;
+        this.Intervall = intervall;
     }
 
-    public Double getInterval() {
-        return interval;
+    public Double getIntervall() {
+        return Intervall;
     }
 
     public void setMaxIteration(Integer maxIteration)
     {
-        this.maxIteration = maxIteration;
+        this.MaxIteration = maxIteration;
     }
 
     public Integer getMaxIteration() {
-        return maxIteration;
+        return MaxIteration;
     }
 }

@@ -33,7 +33,7 @@ public class Calculating {
         this.realTo = BigDecimal.valueOf(requestData.getRealTo());
         this.imaginaryFrom = BigDecimal.valueOf(requestData.getImaginaryFrom());
         this.imaginaryTo = BigDecimal.valueOf(requestData.getImaginaryTo());
-        this.interval = BigDecimal.valueOf(requestData.getInterval());
+        this.interval = BigDecimal.valueOf(requestData.getIntervall());
         this.iteration = BigDecimal.valueOf(requestData.getMaxIteration());
 
         calculationList.clear();
